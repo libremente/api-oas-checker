@@ -1,0 +1,13 @@
+OpenAPI 3.x detected
+OpenAPI 3.x detected
+
+/code/security/tests/security-test.yml
+  7:9  warning  sec-protection-global-unsafe  Operation has undefined security scheme in $.security.  paths./security-ko-put.put
+ 20:9  warning  sec-protection-global-safe    Operation has undefined security scheme in $.security.  paths./security-ko-get.get
+
+/code/security/tests/security-1-test.yml
+ 19:11  warning  sec-protection-global-unsafe  Operation referencing empty security scheme in /security-ko-patch-noauth,patch.  paths./security-ko-patch-noauth.patch.security[0]
+ 24:11  warning  sec-protection-global-unsafe  Operation referencing empty security scheme in /security-ko-post-noauth,patch.   paths./security-ko-post-noauth.patch.security[0]
+
+✖ 4 problems (0 errors, 4 warnings, 0 infos, 0 hints)
+

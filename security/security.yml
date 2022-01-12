@@ -1,0 +1,39 @@
+functions:
+- checkSecurity
+rules:
+  sec-protection-global-unsafe:
+    description: |-
+      Check if the operation is protected at operation level.
+      Otherwise, the global `#/security` property is check.
+    message: "{{error}}"
+    given: "$"
+    then:
+    - function: "checkSecurity"
+      functionOptions:
+        schemesPath: 
+        - securitySchemes
+        # If nullable is false, unauthenticated operations
+        #  raise an error.
+        nullable: false
+        methods:
+        - post
+        - patch
+        - delete
+        - put
+  sec-protection-global-safe:
+    description: |-
+      Check if the operation is protected at operation level.
+      Otherwise, the global `#/security` property is check.
+    message: "{{error}}"
+    given: "$"
+    then:
+    - function: "checkSecurity"
+      functionOptions:
+        schemesPath: 
+        - securitySchemes
+        # If nullable is false, unauthenticated operations
+        #  raise an error.
+        nullable: true
+        methods:
+        - get
+        - head
