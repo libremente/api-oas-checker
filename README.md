@@ -3,6 +3,7 @@
 [![Join the #api channel](https://img.shields.io/badge/Slack-%23api-blue.svg?logo=slack)](https://developersitalia.slack.com/messages/CDKBYTG74)
 [![API on forum.italia.it](https://img.shields.io/badge/Forum-interoperabilit%C3%A0-blue.svg)](https://forum.italia.it/c/piano-triennale/interoperabilita)
 [![README in English](https://img.shields.io/badge/Readme-English-darkgreen.svg)](README.en.md)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flibremente%2Fapi-oas-checker.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Flibremente%2Fapi-oas-checker?ref=badge_shield)
 
 Questo repository contiene un validatore in-browser che verifica alcune delle regole per le API REST indicate nel Modello di Interoperabilità.
 
@@ -156,3 +157,7 @@ Per ulteriori informazioni sulle regole di spectral si veda https://stoplight.io
 
 Grazie a Paolo Falomo
 e a Vincenzo Chianese per i suggerimenti ed i contributi!
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flibremente%2Fapi-oas-checker.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Flibremente%2Fapi-oas-checker?ref=badge_large)
